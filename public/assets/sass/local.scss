@@ -244,24 +244,6 @@
 <--- -------------------------- -*/
 
 /* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #sbs {
-        .cs-container {
-            flex-flow: row;
-            justify-content: space-between;
-            gap: calc(52 / 16 * 1rem);
-        }
-
-        .cs-left {
-            font-size: min(1.2vw, 1em);
-            flex: none;
-        }
-
-        .cs-right {
-            margin: 0;
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---          Gallery           -->
@@ -375,17 +357,6 @@
             .cs-picture3 {
                 height: calc(629 / 16 * 1em);
                 width: calc(420 / 16 * 1em);
-            }
-        }
-    }
-}
-
-/* Dark mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #gallery {
-            .cs-title {
-                color: var(--bodyTextColorWhite);
             }
         }
     }
@@ -514,28 +485,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #reviews {
-            .cs-title,
-            .cs-text,
-            .cs-item-p,
-            .cs-reviewer {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-item {
-                background: var(--medium);
-            }
-
-            .cs-desc {
-                color: var(--primaryLight);
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---          PORTFOLIO           -->
 <--- -------------------------- -*/
@@ -543,8 +492,6 @@
 @media only screen and (min-width: 0rem) {
     #portfolio {
         margin-top: 50px;
-        // width:1440px;
-        // margin: auto;
         margin-bottom: 50px;
         p {
             text-align: center;
@@ -589,7 +536,6 @@
             font-weight: 800;
             margin-bottom: 1rem;
             text-align: left;
-            // margin-top: 2rem;
         }
         .cs-icon {
             background-color: #3c78ff;
@@ -641,14 +587,111 @@
     }
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 640px) {
+    #portfolio {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        p {
+            text-align: center;
+            color: var(--primary);
+            font-family: "GeneralSans-regular", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: calc(30 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            span {
+                color: var(--primary);
+            }
+        }
+        .cs-portfolio {
+            color: #525252 !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .portfolio-features {
+            margin: 0px 10px;
+        }
+        .portfolio-images img {
+            width: 100vw;
+        }
+        .cs-features {
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .cs-icon {
+            background-color: #3c78ff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cs-drop-li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .cs-portfolio-text {
+            color: rgba(82, 82, 82, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 22px 30px;
+            background-color: #236ad9;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 36px;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
     #portfolio {
         margin-top: 50px;
         margin: 0px 50px;
 
         p {
             text-align: center;
-            // color: var(--primary);
             font-family: "GeneralSans", sans-serif !important;
             font-size: 16px !important;
             line-height: 1.5em;
@@ -656,7 +699,125 @@
             margin-bottom: 1rem;
             margin-top: 20px;
             margin: auto;
-            // margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: calc(60 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            span {
+                color: var(--primary);
+            }
+        }
+
+        .cs-portfolio-container {
+            margin: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .portfolio-images img {
+            width: 100%;
+            height: auto;
+        }
+        .cs-features {
+            margin-top: 20px;
+            color: rgb(0, 0, 0) !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 800 !important;
+            // margin-bottom: 1rem;
+            text-align: left;
+        }
+        .cs-portfolio-title {
+            text-align: center;
+        }
+        .cs-portfolio-text {
+            text-align: left;
+        }
+
+        .cs-portfolio {
+            color: #525252 !important;
+        }
+        ul {
+            margin-top: 16px;
+        }
+        .cs-drop-li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px !important;
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .cs-portfolio-content {
+            width: 720px;
+            p {
+                text-align: left;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: calc(18 / 16 * 1rem);
+                line-height: 1.5em;
+                font-weight: normal;
+                margin-bottom: 1rem;
+                margin-top: 20px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+            h1 {
+                text-align: left;
+                color: black;
+                font-size: calc(60 / 16 * 1rem);
+                line-height: 1.5em;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                span {
+                    color: var(--primary);
+                }
+            }
+        }
+        .btn {
+            display: inline-block;
+            padding: 22px 30px;
+            background-color: #236ad9;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 60px !important;
+            transition: background-color 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #portfolio {
+        margin-top: 50px;
+        margin: 0px 50px;
+
+        p {
+            text-align: center;
+            font-family: "GeneralSans", sans-serif !important;
+            font-size: 16px !important;
+            line-height: 1.5em;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            margin-top: 20px;
+            margin: auto;
         }
         h1 {
             text-align: center;
@@ -672,13 +833,11 @@
 
         .cs-portfolio-container {
             width: 1440px;
-            // background-color: aqua;
             margin: auto;
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
-            // margin: -150px 10px;
         }
         .portfolio-images img {
             width: 720px;
@@ -691,7 +850,6 @@
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             font-weight: 800 !important;
-            // margin-bottom: 1rem;
             text-align: left;
         }
         .cs-portfolio-title {
@@ -982,7 +1140,7 @@
 }
 
 /*-- -------------------------- -->
-<---          WHY PRICING US           -->
+<---           PRICING           -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
     .pricing {

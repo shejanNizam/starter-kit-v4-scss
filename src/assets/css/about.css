@@ -160,37 +160,9 @@
     width: 640px !important;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs .cs-left:before, body.dark-mode #sbs .cs-left:after {
-    background: var(--accent);
-  }
-  body.dark-mode #sbs .cs-picture2 {
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-    background-color: var(--dark);
-  }
-  body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #sbs .cs-title,
-  body.dark-mode #sbs .cs-text,
-  body.dark-mode #sbs .cs-h3,
-  body.dark-mode #sbs .cs-flex-p,
-  body.dark-mode #sbs .cs-name {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #sbs .cs-flex-group {
-    background-color: var(--accent);
-  }
-  body.dark-mode #sbs .cs-job {
-    opacity: 0.8;
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #sbs .cs-quote-icon {
-    opacity: 0.2;
-  }
-}
+/*-- -------------------------- -->
+<--- services we provided           -->
+<--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
   .card-container {
     z-index: 100;
@@ -284,8 +256,49 @@
     font-weight: 700;
   }
 }
-/* Inbetween */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
+  .card-container .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: min(1.8vw, 1em);
+  }
+  .card-container .services .card {
+    margin: 0;
+    max-width: 20.3125em;
+  }
+  .card-container .services .card:nth-child(2) {
+    border-left: none;
+    border-right: none;
+  }
+  .card-container .services:nth-child(2) {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card-container .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: min(1.8vw, 1em);
+  }
+  .card-container .services .card {
+    margin: 0;
+    max-width: 20.3125em;
+  }
+  .card-container .services .card:nth-child(2) {
+    border-left: none;
+    border-right: none;
+  }
+  .card-container .services:nth-child(2) {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+}
+@media only screen and (min-width: 1440px) {
   .card-container .services {
     display: flex;
     flex-wrap: wrap;
@@ -775,7 +788,7 @@
 }
 @media only screen and (min-width: 64rem) {
   .mission-section {
-    background-color: #236AD9;
+    background-color: #236ad9;
     color: white;
     padding: 5rem 0 !important;
     border-radius: 20px;
@@ -835,7 +848,7 @@
 }
 @media only screen and (min-width: 0rem) {
   .mission-section {
-    background-color: #236AD9;
+    background-color: #236ad9;
     color: white;
     padding: 5rem 0;
     border-radius: 20px;

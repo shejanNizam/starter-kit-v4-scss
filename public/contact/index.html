@@ -1,0 +1,613 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Meta description for the page" />
+        <meta name="keywords" content="" />
+        <link rel="canonical" href="https://www.example.com/contact/" />
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Contact | Code Stitch Web Designs" />
+        <meta property="og:description" content="Meta description for the page" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.example.com/contact/" />
+        <meta property="og:image" content="/assets/images/logo-small.png" />
+        <meta
+            property="og:image:secure_url"
+            content="/assets/images/logo-small.png"
+        />
+
+        <!--Favicons-->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/favicons/favicon-32x32.png?v1"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff"
+            href="/src/assets/fonts/asphalt.woff"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            as="font"
+            type="font/woff"
+            href="/src/assets/fonts/asphalt.woff"
+            crossorigin
+        />
+
+        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+        
+            <link rel="preload" as="image" href="/assets/images/cabinets2.jpg" />
+        
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css" />
+        <link rel="stylesheet" href="/assets/css/dark.css" />
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+
+
+        <title>Contact | Code Stitch Web Designs</title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a
+            class="skip"
+            aria-label="skip to main content"
+            href="#main"
+            tabindex="1"
+            >Click To Skip To Main Content</a
+        >
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+
+
+<header id="cs-navigation" class="cs-header">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <div >
+            <a href="/"  aria-label="back to home" tabindex="2">
+                <img
+                    src="/assets/images/white-logo.png"
+                    alt=""
+                    width="341"
+                    height="60"
+                    aria-hidden="true"
+                    decoding="async"
+                />
+            </a>
+        </div>
+       
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button
+                class="cs-toggle"
+                id="mobile-menu-toggle"
+                aria-expanded="false"
+                aria-controls="cs-expanded-ul"
+                aria-label="mobile menu toggle"
+                tabindex="4"
+            >
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul">
+                    
+                    
+                        
+                        
+                        
+                        
+                        <li
+                            class="cs-li  "
+                        >
+                            
+                                <a
+                                    href="/"
+                                    class="cs-li-link "
+                                    
+                                >
+                                    Home
+                                </a>
+                            
+                        </li>
+                    
+                        
+                        
+                        
+                        
+                        <li
+                            class="cs-li  "
+                        >
+                            
+                                <a
+                                    href="/services/"
+                                    class="cs-li-link "
+                                    
+                                >
+                                    Services
+                                </a>
+                            
+                        </li>
+                    
+                        
+                        
+                        
+                        
+                        <li
+                            class="cs-li  "
+                        >
+                            
+                                <a
+                                    href="/portfolio/"
+                                    class="cs-li-link "
+                                    
+                                >
+                                    Portfolio
+                                </a>
+                            
+                        </li>
+                    
+                        
+                        
+                        
+                        
+                        <li
+                            class="cs-li  "
+                        >
+                            
+                                <a
+                                    href="/about/"
+                                    class="cs-li-link "
+                                    
+                                >
+                                    About Us
+                                </a>
+                            
+                        </li>
+                    
+                        
+                        
+                        
+                        
+                            
+                        
+                        <li
+                            class="cs-li  cs-hide-on-desktop"
+                        >
+                            
+                                <a
+                                    href="/contact/"
+                                    class="cs-li-link cs-active"
+                                    aria-current="page"
+                                >
+                                    Contact Us
+                                </a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.8058 1.69613C12.8058 1.14385 12.3581 0.696134 11.8058 0.696133L2.80582 0.696133C2.25354 0.696133 1.80582 1.14385 1.80582 1.69613C1.80582 2.24842 2.25354 2.69613 2.80582 2.69613L10.8058 2.69613L10.8058 10.6961C10.8058 11.2484 11.2535 11.6961 11.8058 11.6961C12.3581 11.6961 12.8058 11.2484 12.8058 10.6961L12.8058 1.69613ZM1.90633 13.0098L12.5129 2.40324L11.0987 0.989026L0.492112 11.5956L1.90633 13.0098Z" fill="white"/>
+                </svg>
+                </a>
+        </div>
+       
+    </div>
+</header>
+<script>
+    const header = document.querySelector('#cs-navigation');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+
+
+
+
+<!-- 
+<button
+            id="dark-mode-toggle"
+            aria-label="dark mode toggle"
+            tabindex="3"
+        >
+            <svg
+                class="cs-moon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 480 480"
+                style="enable-background:new 0 0 480 480"
+                xml:space="preserve"
+            >
+                <path
+                    d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+                />
+            </svg>
+            <img
+                class="cs-sun"
+                aria-hidden="true"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg"
+                decoding="async"
+                alt="moon"
+                width="15"
+                height="15"
+            />
+</button> -->
+        <main id="main">
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <p>Contact</p>
+        <h1 id="home-h">Contact Us</h1>
+        <p>
+            Expert web design, development, and digital marketing services to help your business thrive in the heart of Los Angeles. Let us help you stand out online with modern, responsive, and impactful websites.
+        </p>
+        <picture>
+            <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/background.png"
+            />
+            <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/background.png"
+            />
+            <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/images/background.png"
+                alt="kitchen cabinets"
+                loading="eager"
+                width="2500"
+                height="1667"
+            />
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+   
+    
+
+
+    <div class="contact-section">
+        <div class="info">
+            <h2 class="title">We're here to help <span>your business thrive</span></h2>
+            <p class="description">
+                Have questions about your website, need support, or looking for a custom solution? Don't hesitate! We're committed to helping businesses succeed online.
+            </p>
+            <ul class="contact-details">
+                <li><i class="icon location">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="72" height="72" rx="36" fill="#236AD9"/>
+                        <path d="M36 23.5C33.3487 23.503 30.8069 24.5575 28.9322 26.4322C27.0575 28.3069 26.003 30.8487 26 33.5C26 37.5687 28.9538 40.9475 32.0825 44.5237C33.0725 45.6562 34.0975 46.8275 35.01 48.0125C35.1268 48.164 35.2767 48.2866 35.4484 48.3711C35.62 48.4555 35.8087 48.4993 36 48.4993C36.1913 48.4993 36.38 48.4555 36.5516 48.3711C36.7233 48.2866 36.8732 48.164 36.99 48.0125C37.9025 46.8275 38.9275 45.6562 39.9175 44.5237C43.0462 40.9475 46 37.5687 46 33.5C45.997 30.8487 44.9425 28.3069 43.0678 26.4322C41.1931 24.5575 38.6513 23.503 36 23.5ZM36 37.25C35.2583 37.25 34.5333 37.0301 33.9166 36.618C33.2999 36.206 32.8193 35.6203 32.5355 34.9351C32.2516 34.2498 32.1774 33.4958 32.3221 32.7684C32.4667 32.041 32.8239 31.3728 33.3483 30.8483C33.8728 30.3239 34.541 29.9667 35.2684 29.8221C35.9958 29.6774 36.7498 29.7516 37.4351 30.0355C38.1203 30.3193 38.706 30.7999 39.118 31.4166C39.5301 32.0333 39.75 32.7583 39.75 33.5C39.75 34.4946 39.3549 35.4484 38.6517 36.1516C37.9484 36.8549 36.9946 37.25 36 37.25Z" fill="white"/>
+                        </svg>
+                        
+                </i> 
+                <div class="contact-info">
+                    <span class="contact-details-header">Address</span>
+                <span>123 Main Street, Los Angeles, CA 90015</span>
+                </div>
+                
+            </li>
+                <li><i class="icon phone">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="72" height="72" rx="36" fill="#236AD9"/>
+                        <path d="M35.9609 33.6647C35.9609 33.9447 36.1859 34.1647 36.4609 34.1647C37.0309 34.1647 37.4909 34.6297 37.4909 35.1947C37.4909 35.4697 37.7159 35.6947 37.9909 35.6947C38.2659 35.6947 38.4909 35.4697 38.4909 35.1947C38.4909 34.0747 37.5809 33.1647 36.4609 33.1647C36.1859 33.1647 35.9609 33.3897 35.9609 33.6647ZM44.1009 35.6947C44.3809 35.6947 44.6009 35.4697 44.6009 35.1947C44.6009 30.7047 40.9509 27.0547 36.4609 27.0547C36.1859 27.0547 35.9609 27.2797 35.9609 27.5547C35.9609 27.8297 36.1859 28.0547 36.4609 28.0547C40.4009 28.0547 43.6009 31.2597 43.6009 35.1947C43.6009 35.4697 43.8259 35.6947 44.1009 35.6947Z" fill="white"/>
+                        <path d="M40.5453 35.195C40.5453 35.47 40.7703 35.695 41.0453 35.695C41.3203 35.695 41.5453 35.47 41.5453 35.195C41.5453 32.39 39.2653 30.11 36.4603 30.11C36.1853 30.11 35.9603 30.335 35.9603 30.61C35.9603 30.89 36.1853 31.11 36.4603 31.11C38.7153 31.11 40.5453 32.945 40.5453 35.195ZM36.4603 24C36.1853 24 35.9603 24.225 35.9603 24.5C35.9603 24.775 36.1853 25 36.4603 25C42.0853 25 46.6603 29.575 46.6603 35.195C46.6603 35.47 46.8803 35.695 47.1603 35.695C47.4353 35.695 47.6603 35.47 47.6603 35.195C47.6603 29.02 42.6353 24 36.4603 24ZM41.3453 40.465L40.6903 40.82C39.5853 41.425 38.1853 41.22 37.2903 40.325L32.0103 35.045C31.1153 34.15 30.9103 32.75 31.5153 31.64L31.8703 30.99C32.2703 30.25 32.4153 29.42 32.2953 28.59C32.1819 27.7617 31.7989 26.9938 31.2053 26.405C30.4753 25.675 29.5053 25.275 28.4703 25.275C27.4353 25.275 26.4603 25.675 25.7303 26.405L25.4753 26.665C24.1253 28.015 23.9703 30.34 25.0353 33.22C26.0403 35.97 28.0653 38.95 30.7253 41.61C34.7803 45.665 39.2953 48 42.5353 48C43.8153 48 44.9003 47.635 45.6703 46.865L45.9303 46.605C46.2903 46.2453 46.5759 45.8182 46.7707 45.348C46.9654 44.8779 47.0656 44.3739 47.0653 43.865C47.0583 42.8402 46.651 41.8587 45.9303 41.13C44.7253 39.925 42.8403 39.655 41.3453 40.465Z" fill="white"/>
+                        </svg>
+                        
+                </i>   <div class="contact-info">
+                    <span class="contact-details-header">Phone</span>
+                <span>(123) 456-7890</span>
+                </div></li>
+                <li><i class="icon email">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="72" height="72" rx="36" fill="#236AD9"/>
+                        <path d="M35.9969 34.8844L47.9781 27.1875C47.4964 26.8262 46.9115 26.629 46.3094 26.625H25.6844C25.0823 26.629 24.4973 26.8262 24.0156 27.1875L35.9969 34.8844Z" fill="white"/>
+                        <path d="M36.5063 36.7879L36.3469 36.8629H36.2719C36.1856 36.9015 36.0939 36.9267 36 36.9379C35.9222 36.9477 35.8434 36.9477 35.7656 36.9379H35.6906L35.5312 36.8629L22.9687 28.7441C22.9087 28.9706 22.8772 29.2036 22.875 29.4379V42.5629C22.875 43.3088 23.1713 44.0242 23.6988 44.5516C24.2262 45.0791 24.9416 45.3754 25.6875 45.3754H46.3125C47.0584 45.3754 47.7738 45.0791 48.3012 44.5516C48.8287 44.0242 49.125 43.3088 49.125 42.5629V29.4379C49.1228 29.2036 49.0913 28.9706 49.0312 28.7441L36.5063 36.7879Z" fill="white"/>
+                        </svg>
+                        
+                </i>   <div class="contact-info">
+                    <span class="contact-details-header">Mail address</span>
+                <span>support@websolutly.com</span>
+                </div></li>
+                <li><i class="icon clock">
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="72" height="72" rx="36" fill="#236AD9"/>
+                        <path d="M36 22.25C33.2805 22.25 30.6221 23.0564 28.3609 24.5673C26.0997 26.0782 24.3374 28.2256 23.2967 30.7381C22.256 33.2506 21.9837 36.0153 22.5142 38.6825C23.0448 41.3497 24.3543 43.7997 26.2773 45.7227C28.2003 47.6457 30.6503 48.9552 33.3175 49.4858C35.9847 50.0163 38.7494 49.744 41.2619 48.7033C43.7744 47.6626 45.9218 45.9003 47.4327 43.6391C48.9436 41.3779 49.75 38.7195 49.75 36C49.75 32.3533 48.3013 28.8559 45.7227 26.2773C43.1441 23.6987 39.6467 22.25 36 22.25ZM41 37.25H36C35.6685 37.25 35.3505 37.1183 35.1161 36.8839C34.8817 36.6495 34.75 36.3315 34.75 36V28.5C34.75 28.1685 34.8817 27.8505 35.1161 27.6161C35.3505 27.3817 35.6685 27.25 36 27.25C36.3315 27.25 36.6495 27.3817 36.8839 27.6161C37.1183 27.8505 37.25 28.1685 37.25 28.5V34.75H41C41.3315 34.75 41.6495 34.8817 41.8839 35.1161C42.1183 35.3505 42.25 35.6685 42.25 36C42.25 36.3315 42.1183 36.6495 41.8839 36.8839C41.6495 37.1183 41.3315 37.25 41 37.25Z" fill="white"/>
+                        </svg>
+                        
+                    
+                </i>
+                
+                <div class="contact-info">
+                    <span class="contact-details-header">Opening hours</span>
+                <span>Monday - Friday : 8:00 am - 5:00 pm</span>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <h2 class="form-title">Get in touch with us!</h2>
+            <p class="form-little">Have a project in mind? Let's connect!</p>
+            <form class="contact-form">
+                <div class="contact-layout">
+                    <input type="text" placeholder="Full name" required>
+                    <input type="text" placeholder="Phone" required>
+                   
+                </div>
+              <div>
+
+              </div>
+              <div class="contact-layout">
+                <input type="text" placeholder="Budget (Optional)">
+                <select required>
+                    <option value="">Select service needed</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="seo">SEO</option>
+                </select>
+              </div>
+              <input type="email" placeholder="Email address" required>
+                
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="map-section">
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2740008728!2d-118.6919306743344!3d34.0201613134167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c635a2f476b3%3A0xc6a4c42d9294f745!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1699981645871!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="location-marker"></div> -->
+        <img class="map-1" src="/assets/images/Map.svg" alt="">
+        <img class="map-2" src="/assets/images/map-min.svg" alt="">
+    </div>
+
+
+  
+
+    <section class="get-it-done-section">
+        <header class="get-it-done-section__header">
+            <div class="get-it-done-section__title-1">
+                Get it done <span>with us today</span>
+            </div>
+            <div class="get-it-done-section__description">
+                At Websolutely, we specialize in creating affordable, high-performance, custom-coded websites designed to showcase the unique character of your business. We absolutely ensure you stand out in the digital world.
+            </div>
+            <button class="get-it-done-section__cta">Get an Estimate Now</button>
+        </header>
+    
+        <div class="get-it-done-section__illustration">
+            <img src="/assets/images/get-done.png" alt="Illustration">
+        </div>
+    </section>
+
+    <script>
+        function initMap() {
+            const location = { lat: 34.052235, lng: -118.243683 }; // Coordinates for Los Angeles
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: location,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry",
+                        "stylers": [
+                            { "color": "#e7e7e7" }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            { "color": "#8b8b8b" }
+                        ]
+                    }
+                ]
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                icon: {
+                    url: "https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png",
+                    scaledSize: new google.maps.Size(32, 32)
+                }
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"
+                ><img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/logo-1.svg"
+                    alt="logo"
+                    width="238"
+                    height="78"
+            /></a>
+
+            <p class="">100% hand-coded, fast websites starting at $200/mo.</p>
+            <div class="social-media">
+                <img src="/assets/images/Linkedin.svg" alt="" />
+                <img src="/assets/images/Twitter.svg" alt="" />
+                <img src="/assets/images/facebook.svg" alt="" />
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">Services</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/projects">How it works</a>
+                    </li>
+                    <li>
+                        <a href="/reviews">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Blog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Legal Information</h2>
+                    </li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact Information</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M17.0977 15.1546C16.5791 16.7303 14.5474 17.5166 13.0959 17.3855C11.1135 17.2063 8.95633 16.1547 7.31887 14.9966C4.91198 13.2943 2.6574 10.6613 1.34363 7.86698C0.41514 5.89249 0.206818 3.46442 1.58779 1.66464C2.09851 0.999388 2.6518 0.644361 3.4806 0.602922C4.63197 0.546924 4.79325 1.20546 5.18862 2.23134C5.48318 2.99852 5.8763 3.78137 6.09582 4.57654C6.50687 6.06049 5.0699 6.12208 4.88846 7.335C4.77645 8.09993 5.7027 9.12582 6.12158 9.67124C6.92898 10.7335 7.91787 11.6446 9.04257 12.3625C9.68097 12.7646 10.7091 13.4892 11.4394 13.0894C12.5639 12.4734 12.4586 10.5773 14.03 11.219C14.8442 11.5505 15.6327 12.0288 16.41 12.4476C17.6118 13.0938 17.5558 13.7636 17.0977 15.1546C17.4404 14.1152 16.7549 16.1939 17.0977 15.1546Z"
+                                    fill="#236AD9"
+                                />
+                            </svg>
+                            (+1) 465-225-3225
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:555-779-4407">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9991 11.1075L21.5841 4.95C21.1987 4.66096 20.7308 4.50323 20.2491 4.5H3.74906C3.26736 4.50323 2.79942 4.66096 2.41406 4.95L11.9991 11.1075Z"
+                                    fill="#236AD9"
+                                />
+                                <path
+                                    d="M12.405 12.6303L12.2775 12.6903H12.2175C12.1484 12.7212 12.0751 12.7414 12 12.7503C11.9377 12.7582 11.8748 12.7582 11.8125 12.7503H11.7525L11.625 12.6903L1.575 6.19531C1.52698 6.37647 1.50179 6.56291 1.5 6.75031V17.2503C1.5 17.847 1.73705 18.4193 2.15901 18.8413C2.58097 19.2633 3.15326 19.5003 3.75 19.5003H20.25C20.8467 19.5003 21.419 19.2633 21.841 18.8413C22.2629 18.4193 22.5 17.847 22.5 17.2503V6.75031C22.4982 6.56291 22.473 6.37647 22.425 6.19531L12.405 12.6303Z"
+                                    fill="#236AD9"
+                                />
+                            </svg>
+                            (555) 779-4407
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:help@codestitch.app"
+                            ><svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 14 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6.99609 0C3.13109 0 -0.00390625 3.135 -0.00390625 7C-0.00390625 12.25 6.99609 20 6.99609 20C6.99609 20 13.9961 12.25 13.9961 7C13.9961 3.135 10.8611 0 6.99609 0ZM6.99609 9.5C5.61609 9.5 4.49609 8.38 4.49609 7C4.49609 5.62 5.61609 4.5 6.99609 4.5C8.37609 4.5 9.49609 5.62 9.49609 7C9.49609 8.38 8.37609 9.5 6.99609 9.5Z"
+                                    fill="#236AD9"
+                                />
+                            </svg>
+                          US-1, Fort Pierce, First floor-10 FL 34982</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span class="copyright"
+            >Copyright © 2025
+            <a href="/" target="_blank" rel="noopener"> Websolutly </a>. All
+            Right reserved.</span
+        >
+        <span>Privacy policy | Terms & Conditions</span>
+    </div>
+</footer>
+
+    </body>
+</html>

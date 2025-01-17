@@ -1,0 +1,131 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"
+                ><img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/logo-1.svg"
+                    alt="logo"
+                    width="238"
+                    height="78"
+            /></a>
+
+            <p class="">100% hand-coded, fast websites starting at $200/mo.</p>
+            <div class="social-media">
+                <img src="/assets/images/Linkedin.svg" alt="" />
+                <img src="/assets/images/Twitter.svg" alt="" />
+                <img src="/assets/images/facebook.svg" alt="" />
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">Services</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/projects">How it works</a>
+                    </li>
+                    <li>
+                        <a href="/reviews">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Blog</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Legal Information</h2>
+                    </li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact Information</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M17.0977 15.1546C16.5791 16.7303 14.5474 17.5166 13.0959 17.3855C11.1135 17.2063 8.95633 16.1547 7.31887 14.9966C4.91198 13.2943 2.6574 10.6613 1.34363 7.86698C0.41514 5.89249 0.206818 3.46442 1.58779 1.66464C2.09851 0.999388 2.6518 0.644361 3.4806 0.602922C4.63197 0.546924 4.79325 1.20546 5.18862 2.23134C5.48318 2.99852 5.8763 3.78137 6.09582 4.57654C6.50687 6.06049 5.0699 6.12208 4.88846 7.335C4.77645 8.09993 5.7027 9.12582 6.12158 9.67124C6.92898 10.7335 7.91787 11.6446 9.04257 12.3625C9.68097 12.7646 10.7091 13.4892 11.4394 13.0894C12.5639 12.4734 12.4586 10.5773 14.03 11.219C14.8442 11.5505 15.6327 12.0288 16.41 12.4476C17.6118 13.0938 17.5558 13.7636 17.0977 15.1546C17.4404 14.1152 16.7549 16.1939 17.0977 15.1546Z"
+                                    fill="#236AD9"
+                                />
+                            </svg>
+                            (+1) 465-225-3225
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:{{ client.phoneForTel }}">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.9991 11.1075L21.5841 4.95C21.1987 4.66096 20.7308 4.50323 20.2491 4.5H3.74906C3.26736 4.50323 2.79942 4.66096 2.41406 4.95L11.9991 11.1075Z"
+                                    fill="#236AD9"
+                                />
+                                <path
+                                    d="M12.405 12.6303L12.2775 12.6903H12.2175C12.1484 12.7212 12.0751 12.7414 12 12.7503C11.9377 12.7582 11.8748 12.7582 11.8125 12.7503H11.7525L11.625 12.6903L1.575 6.19531C1.52698 6.37647 1.50179 6.56291 1.5 6.75031V17.2503C1.5 17.847 1.73705 18.4193 2.15901 18.8413C2.58097 19.2633 3.15326 19.5003 3.75 19.5003H20.25C20.8467 19.5003 21.419 19.2633 21.841 18.8413C22.2629 18.4193 22.5 17.847 22.5 17.2503V6.75031C22.4982 6.56291 22.473 6.37647 22.425 6.19531L12.405 12.6303Z"
+                                    fill="#236AD9"
+                                />
+                            </svg>
+                            {{ client.phoneFormatted }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ client.email }}"
+                            ><svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 14 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6.99609 0C3.13109 0 -0.00390625 3.135 -0.00390625 7C-0.00390625 12.25 6.99609 20 6.99609 20C6.99609 20 13.9961 12.25 13.9961 7C13.9961 3.135 10.8611 0 6.99609 0ZM6.99609 9.5C5.61609 9.5 4.49609 8.38 4.49609 7C4.49609 5.62 5.61609 4.5 6.99609 4.5C8.37609 4.5 9.49609 5.62 9.49609 7C9.49609 8.38 8.37609 9.5 6.99609 9.5Z"
+                                    fill="#236AD9"
+                                />
+                            </svg>
+                          US-1, Fort Pierce, First floor-10 FL 34982</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span class="copyright"
+            >Copyright © {% year %}
+            <a href="/" target="_blank" rel="noopener"> Websolutly </a>. All
+            Right reserved.</span
+        >
+        <span>Privacy policy | Terms & Conditions</span>
+    </div>
+</footer>

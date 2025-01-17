@@ -934,7 +934,189 @@
     margin: auto;
   }
 }
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 640px) {
+  #why-choose-us {
+    margin-top: 50px;
+    margin: auto;
+  }
+  #why-choose-us title {
+    text-align: center;
+    color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  #why-choose-us h1 {
+    text-align: center;
+    color: black;
+    font-size: 1.875rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  #why-choose-us h1 span {
+    color: var(--primary);
+  }
+  #why-choose-us .cs-portfolio {
+    color: rgb(82, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #why-choose-us .portfolio-features {
+    margin: 20px 10px;
+  }
+  #why-choose-us .why-choose-images img {
+    width: 99vw;
+    margin: auto;
+  }
+  #why-choose-us .why-choose-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  #why-choose-us .why-choose-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  #why-choose-us .why-choose-icon {
+    background-color: #3c78ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-us .why-choose-text {
+    width: 100%;
+  }
+  #why-choose-us .why-choose-text h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #why-choose-us .why-choose-text p {
+    color: rgb(82, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #why-choose-us {
+    margin-top: 50px;
+  }
+  #why-choose-us .title {
+    text-align: center;
+    color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0rem !important;
+    width: 900px;
+    margin: auto;
+  }
+  #why-choose-us h1 {
+    text-align: center;
+    color: black;
+    font-size: 3.75rem;
+    line-height: 1.1em;
+    font-weight: 500;
+    margin-bottom: 18px !important;
+    width: 900px;
+    margin: auto;
+  }
+  #why-choose-us h1 span {
+    color: var(--primary);
+  }
+  #why-choose-us .cs-portfolio {
+    margin: auto !important;
+  }
+  #why-choose-us .why-choose-images img {
+    width: 90%;
+    height: 100%;
+    margin-right: -600px;
+    margin-left: 0px;
+  }
+  #why-choose-us .why-choose-images {
+    margin: 0px;
+  }
+  #why-choose-us .why-choose-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    gap: 20px;
+  }
+  #why-choose-us .why-choose-content {
+    color: rgb(82, 82, 82);
+  }
+  #why-choose-us .why-choose-card {
+    width: 540px;
+    margin-right: -650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  #why-choose-us .why-choose-card .why-choose-icon {
+    background-color: #3c78ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-us .why-choose-text h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: 600;
+    margin-bottom: 0rem;
+    text-align: left;
+  }
+  #why-choose-us .why-choose-text p {
+    color: rgb(82, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-left: 0px !important;
+  }
+}
+@media only screen and (min-width: 1440px) {
   #why-choose-us {
     margin-top: 50px;
   }

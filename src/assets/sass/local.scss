@@ -1031,8 +1031,218 @@
         }
     }
 }
+@media only screen and (min-width: 640px) {
+    #why-choose-us {
+        margin-top: 50px;
+        margin: auto;
+        // background-color: antiquewhite;
+        title {
+            text-align: center;
+            color: var(--primary);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
 
-@media only screen and (min-width: 64rem) {
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: calc(30 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            span {
+                color: var(--primary);
+            }
+        }
+        .cs-portfolio {
+            color: rgba(82, 82, 82, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(18 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+
+            // width: 950px;
+        }
+        .portfolio-features {
+            margin: 20px 10px;
+        }
+        .why-choose-images img {
+            width: 99vw;
+            margin: auto;
+        }
+        //    .why-choose-container{
+        //     margin: auto;
+        //     // background-color: brown;
+        //     width: 90%;
+        //    }
+
+        .why-choose-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 20px;
+
+            // background-color: blue;
+        }
+
+        .why-choose-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .why-choose-icon {
+            background-color: #3c78ff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .why-choose-text {
+            width: 100%;
+        }
+        .why-choose-text h1 {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(18 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .why-choose-text p {
+            color: rgba(82, 82, 82, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #why-choose-us {
+        margin-top: 50px;
+
+        .title {
+            text-align: center;
+            color: var(--primary);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 0rem !important;
+            width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-size: calc(60 / 16 * 1rem);
+            line-height: 1.1em;
+            font-weight: 500;
+            margin-bottom: 18px !important;
+            width: 900px;
+            margin: auto;
+            span {
+                color: var(--primary);
+            }
+        }
+
+        .cs-portfolio {
+            margin: auto !important;
+            // width: 950px;
+        }
+
+        // width: 950px;
+
+        .why-choose-images img {
+            width: 90%;
+            height: 100%;
+            // height: 852px;
+            margin-right: -600px;
+            margin-left: 0px;
+            // background-color: #3c78ff;
+        }
+        .why-choose-images {
+            margin: 0px;
+        }
+
+        .why-choose-container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            margin-left: 20px;
+            gap: 20px;
+
+            // background-color: #3c78ff;
+        }
+        .why-choose-content {
+            // width: 640px;
+            // margin-top: -250px;
+            color: rgba(82, 82, 82, 1);
+        }
+        .why-choose-card {
+            width: 540px;
+            margin-right: -650px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            .why-choose-icon {
+                background-color: #3c78ff;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .why-choose-text h1 {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1em;
+            font-weight: 600;
+            margin-bottom: 0rem;
+            text-align: left;
+        }
+        .why-choose-text p {
+            color: rgba(82, 82, 82, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: left;
+            margin-left: 0px !important ;
+            // margin: auto;
+            // width: 502px;
+        }
+    }
+}
+@media only screen and (min-width: 1440px) {
     #why-choose-us {
         margin-top: 50px;
 

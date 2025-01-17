@@ -1372,13 +1372,27 @@
     background: #0041b4;
   }
 }
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 640px) {
   .pricing {
     text-align: center;
     padding: 2rem;
   }
+  .pricing p {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: var(--primary);
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  .pricing .pricing__subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: #525252;
+    font-family: "Roboto", "Arial", sans-serif;
+  }
   .pricing__title {
-    font-size: 60px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 1rem;
   }
@@ -1389,7 +1403,6 @@
     font-size: 1rem;
     color: #666;
     margin-bottom: 5rem;
-    width: 900px;
   }
   .pricing__cards {
     display: flex;
@@ -1398,8 +1411,8 @@
     width: 100%;
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
     position: relative;
-    margin-top: 50px;
   }
   .pricing__card {
     background: #fff;
@@ -1518,33 +1531,343 @@
     background: #0041b4;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .pricing {
+    text-align: center;
+    padding: 2rem;
+  }
+  .pricing p {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: var(--primary);
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  .pricing .pricing__subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: #525252;
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  .pricing__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .pricing__title .highlight {
+    color: #0056e6;
+  }
+  .pricing__subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5rem;
+  }
+  .pricing__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: relative;
+  }
+  .pricing__card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    position: relative;
+    height: 510px;
+  }
+  .pricing__card--starter {
+    border: 2px solid #0056e6;
+    background-color: var(--primary);
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__card-title {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__header {
+    border-bottom: 1px solid #fff;
+  }
+  .pricing__card--starter .pricing__price-title {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__price-title span {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__price {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__features li {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__features li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+  }
+  .pricing__card--starter .pricing__button {
+    background-color: #68a3ff;
+  }
+  .pricing__card--starter .pricing__badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #0056e6;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  .pricing__header {
+    border-bottom: 1px solid #525252;
+    margin-bottom: 10px;
+  }
+  .pricing__card-title {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+  .pricing__price {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #525252;
+  }
+  .pricing__price-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #525252;
+  }
+  .pricing__price-title .pricing__amount {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .pricing__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    height: 45%;
+  }
+  .pricing__features p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .pricing__features li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .pricing__features li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0056e6;
+  }
+  .pricing__button {
+    position: absolute;
+    bottom: 25px;
+    width: 90%;
+    background: #0056e6;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .pricing__button:hover {
+    background: #0041b4;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .pricing {
+    text-align: center;
+    padding: 2rem;
+  }
+  .pricing p {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: var(--primary);
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  .pricing .pricing__subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    color: #525252;
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  .pricing__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .pricing__title .highlight {
+    color: #0056e6;
+  }
+  .pricing__subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5rem;
+  }
+  .pricing__cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    position: relative;
+  }
+  .pricing__card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    position: relative;
+    height: 510px;
+  }
+  .pricing__card--starter {
+    border: 2px solid #0056e6;
+    background-color: var(--primary);
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__card-title {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__header {
+    border-bottom: 1px solid #fff;
+  }
+  .pricing__card--starter .pricing__price-title {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__price-title span {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__price {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__features li {
+    color: #fff;
+  }
+  .pricing__card--starter .pricing__features li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+  }
+  .pricing__card--starter .pricing__button {
+    background-color: #68a3ff;
+  }
+  .pricing__card--starter .pricing__badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #0056e6;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  .pricing__header {
+    border-bottom: 1px solid #525252;
+    margin-bottom: 10px;
+  }
+  .pricing__card-title {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+  .pricing__price {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #525252;
+  }
+  .pricing__price-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #525252;
+  }
+  .pricing__price-title .pricing__amount {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .pricing__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    height: 45%;
+  }
+  .pricing__features p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .pricing__features li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .pricing__features li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0056e6;
+  }
+  .pricing__button {
+    position: absolute;
+    bottom: 25px;
+    width: 90%;
+    background: #0056e6;
+    color: #fff;
+    text-align: center;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .pricing__button:hover {
+    background: #0041b4;
+  }
+}
 /*-- -------------------------- -->
 <---          BLOG           -->
 <--- -------------------------- -*/
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 0rem) {
   .blog-section {
     text-align: center;
     padding: 4rem 1rem;
-    width: 80% !important;
+    width: 100%;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
   }
   .blog-section .blog-section__header {
     margin-bottom: 3rem;
-    width: 900px;
-    margin: auto;
   }
   .blog-section .blog-section__header .blog-section__subtitle {
     color: #0056e6;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 16px;
     margin-bottom: 0.5rem;
   }
   .blog-section .blog-section__header .blog-section__title {
-    font-size: 60px !important;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 1rem;
+    font-family: "Asphalt", sans-serif;
   }
   .blog-section .blog-section__header .blog-section__title span {
     color: #0056e6;
@@ -1552,10 +1875,7 @@
   .blog-section .blog-section__header .blog-section__description {
     color: #666666;
     font-size: 1rem;
-    max-width: 750px !important;
-    margin: 0 auto;
     line-height: 1.6;
-    width: 900px;
   }
   .blog-section__cards {
     display: grid;
@@ -1565,7 +1885,6 @@
   .blog-card {
     background: #ffffff;
     border-radius: 1rem;
-    width: 460px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1651,29 +1970,30 @@
     text-decoration: underline;
   }
 }
-@media only screen and (min-width: 0rem) {
+@media only screen and (min-width: 640px) {
   .blog-section {
     text-align: center;
     padding: 4rem 1rem;
-    width: 100%;
+    width: 80% !important;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
   }
   .blog-section .blog-section__header {
     margin-bottom: 3rem;
+    width: 900px;
+    margin: auto;
   }
   .blog-section .blog-section__header .blog-section__subtitle {
     color: #0056e6;
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
   }
   .blog-section .blog-section__header .blog-section__title {
-    font-size: 30px;
+    font-size: 60px !important;
     font-weight: bold;
     margin-bottom: 1rem;
-    font-family: "Asphalt", sans-serif;
   }
   .blog-section .blog-section__header .blog-section__title span {
     color: #0056e6;
@@ -1681,7 +2001,10 @@
   .blog-section .blog-section__header .blog-section__description {
     color: #666666;
     font-size: 1rem;
+    max-width: 750px !important;
+    margin: 0 auto;
     line-height: 1.6;
+    width: 900px;
   }
   .blog-section__cards {
     display: grid;
@@ -1691,6 +2014,265 @@
   .blog-card {
     background: #ffffff;
     border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  .blog-card__meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #999999;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+  }
+  .blog-card__image {
+    background-color: var(--primary);
+  }
+  .blog-card__calender {
+    border-left: 1px solid #000000;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .blog-card__image img {
+    width: 254px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .blog-card__title {
+    text-align: left;
+  }
+  .blog-card__excerpt {
+    text-align: left;
+    margin: 10px 0px;
+  }
+  .blog-card__link {
+    text-align: left;
+    color: #0056e6;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px;
+  }
+  .blog-card__content {
+    padding: 1.5rem;
+  }
+  .blog-card__content__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #999999;
+    margin-bottom: 1rem;
+  }
+  .blog-card__content__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .blog-card__content__excerpt {
+    font-size: 0.9rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+  }
+  .blog-card__content__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #0056e6;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .blog-card__content__link span {
+    margin-left: 0.5rem;
+  }
+  .blog-card__content__link:hover {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .blog-section {
+    text-align: center;
+    padding: 4rem 1rem;
+    width: 80% !important;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .blog-section .blog-section__header {
+    margin-bottom: 3rem;
+    width: 900px;
+    margin: auto;
+  }
+  .blog-section .blog-section__header .blog-section__subtitle {
+    color: #0056e6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .blog-section .blog-section__header .blog-section__title {
+    font-size: 60px !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .blog-section .blog-section__header .blog-section__title span {
+    color: #0056e6;
+  }
+  .blog-section .blog-section__header .blog-section__description {
+    color: #666666;
+    font-size: 1rem;
+    max-width: 750px !important;
+    margin: 0 auto;
+    line-height: 1.6;
+    width: 900px;
+  }
+  .blog-section__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .blog-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  .blog-card__meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #999999;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+  }
+  .blog-card__image {
+    background-color: var(--primary);
+  }
+  .blog-card__calender {
+    border-left: 1px solid #000000;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .blog-card__image img {
+    width: 254px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .blog-card__title {
+    text-align: left;
+  }
+  .blog-card__excerpt {
+    text-align: left;
+    margin: 10px 0px;
+  }
+  .blog-card__link {
+    text-align: left;
+    color: #0056e6;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px;
+  }
+  .blog-card__content {
+    padding: 1.5rem;
+  }
+  .blog-card__content__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #999999;
+    margin-bottom: 1rem;
+  }
+  .blog-card__content__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .blog-card__content__excerpt {
+    font-size: 0.9rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+  }
+  .blog-card__content__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #0056e6;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .blog-card__content__link span {
+    margin-left: 0.5rem;
+  }
+  .blog-card__content__link:hover {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .blog-section {
+    text-align: center;
+    padding: 4rem 1rem;
+    width: 80% !important;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .blog-section .blog-section__header {
+    margin-bottom: 3rem;
+    width: 900px;
+    margin: auto;
+  }
+  .blog-section .blog-section__header .blog-section__subtitle {
+    color: #0056e6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .blog-section .blog-section__header .blog-section__title {
+    font-size: 60px !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .blog-section .blog-section__header .blog-section__title span {
+    color: #0056e6;
+  }
+  .blog-section .blog-section__header .blog-section__description {
+    color: #666666;
+    font-size: 1rem;
+    max-width: 750px !important;
+    margin: 0 auto;
+    line-height: 1.6;
+    width: 900px;
+  }
+  .blog-section__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .blog-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    width: 460px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

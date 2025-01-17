@@ -1008,7 +1008,308 @@
 /*-- -------------------------- -->
 <--- how it work home start            -->
 <--- -------------------------- -*/
-@media only screen and (min-width: 64rem) {
+
+@media only screen and (min-width: 320px) {
+    .process-section {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1),
+            rgba(242, 245, 255, 1)
+        );
+
+        .section-header {
+            font-size: 16px;
+            line-height: calc(24 / 18 * 1em);
+            font-family: "Roboto", "Arial", sans-serif;
+            font-weight: 500;
+            color: rgba(35, 106, 217, 1);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .section-title {
+            width: 100%;
+            margin: auto;
+            font-size: 30px;
+        }
+        .section-description {
+            width: 100%;
+            margin: auto;
+            font-size: 18px;
+            color: #353535;
+            font-weight: normal;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            padding: 50px 0;
+            text-align: center;
+
+            width: 100%;
+            margin: auto;
+
+            .section-title {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+
+                .highlight {
+                    color: rgba(35, 106, 217, 1);
+                }
+            }
+
+            .section-description {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 40px;
+            }
+
+            .progress-indicator {
+                display: none;
+                align-items: center !important;
+                justify-content: space-between !important;
+                width: 1440px !important;
+                font-family: Arial, Helvetica, sans-serif;
+
+                .step-line {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border: 2px solid #d9d9d9;
+                    color: #000;
+                    font-weight: bold;
+                    transition:
+                        background-color 0.3s,
+                        border-color 0.3s;
+
+                    &.completed {
+                        background-color: #007bff;
+                        color: #fff;
+                        border-color: #007bff;
+                    }
+                }
+
+                .line {
+                    flex: 1;
+                    height: 2px;
+                    background-color: #d9d9d9;
+                    width: 100%;
+                }
+
+                // Ensure no extra space between line and step-line
+                .line + .step-line {
+                    margin-left: -2px; // Overlap slightly to connect with the line
+                }
+
+                .line:first-child {
+                    flex: 0.5; // Adjust line size before the first step
+                    background-color: #e2e2e2;
+                }
+
+                .line:last-child {
+                    flex: 0.5; // Adjust line size after the last step
+                    background-color: #d9d9d9;
+                }
+
+                // Special handling for first and last lines
+                .progress-indicator > .line:first-child {
+                    flex: 0.5; // Adjust line size before the first step
+                    background-color: #e2e2e2;
+                }
+
+                .progress-indicator > .line:last-child {
+                    flex: 0.5; // Adjust line size after the last step
+                    background-color: #d9d9d9;
+                }
+            }
+
+            .steps {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+                width: 100%;
+                margin: 48px 0px;
+                font-family: Arial, Helvetica, sans-serif;
+
+                .step {
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    max-width: 90%;
+                    padding: 48px 36px;
+                    margin: auto;
+
+                    h3 {
+                        font-size: 30px;
+                        margin-top: 36px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        color: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 640px) {
+    .process-section {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1),
+            rgba(242, 245, 255, 1)
+        );
+
+        .section-header {
+            font-size: 16px;
+            line-height: calc(24 / 18 * 1em);
+            font-family: "Roboto", "Arial", sans-serif;
+            font-weight: 500;
+            color: rgba(35, 106, 217, 1);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .section-title {
+            width: 100%;
+            margin: auto;
+            font-size: 30px;
+        }
+        .section-description {
+            width: 100%;
+            margin: auto;
+            font-size: 18px;
+            color: #353535;
+            font-weight: normal;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            padding: 50px 0;
+            text-align: center;
+
+            width: 100%;
+            margin: auto;
+
+            .section-title {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+
+                .highlight {
+                    color: rgba(35, 106, 217, 1);
+                }
+            }
+
+            .section-description {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 40px;
+            }
+
+            .progress-indicator {
+                display: none;
+                align-items: center !important;
+                justify-content: space-between !important;
+                width: 1440px !important;
+                font-family: Arial, Helvetica, sans-serif;
+
+                .step-line {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border: 2px solid #d9d9d9;
+                    color: #000;
+                    font-weight: bold;
+                    transition:
+                        background-color 0.3s,
+                        border-color 0.3s;
+
+                    &.completed {
+                        background-color: #007bff;
+                        color: #fff;
+                        border-color: #007bff;
+                    }
+                }
+
+                .line {
+                    flex: 1;
+                    height: 2px;
+                    background-color: #d9d9d9;
+                    width: 100%;
+                }
+
+                // Ensure no extra space between line and step-line
+                .line + .step-line {
+                    margin-left: -2px; // Overlap slightly to connect with the line
+                }
+
+                .line:first-child {
+                    flex: 0.5; // Adjust line size before the first step
+                    background-color: #e2e2e2;
+                }
+
+                .line:last-child {
+                    flex: 0.5; // Adjust line size after the last step
+                    background-color: #d9d9d9;
+                }
+
+                // Special handling for first and last lines
+                .progress-indicator > .line:first-child {
+                    flex: 0.5; // Adjust line size before the first step
+                    background-color: #e2e2e2;
+                }
+
+                .progress-indicator > .line:last-child {
+                    flex: 0.5; // Adjust line size after the last step
+                    background-color: #d9d9d9;
+                }
+            }
+
+            .steps {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+                width: 100%;
+                margin: 48px 0px;
+                font-family: Arial, Helvetica, sans-serif;
+
+                .step {
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    max-width: 90%;
+                    padding: 48px 36px;
+                    margin: auto;
+
+                    h3 {
+                        font-size: 30px;
+                        margin-top: 36px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        color: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
     .process-section {
         background: linear-gradient(
             0deg,
@@ -1023,7 +1324,6 @@
             color: rgba(35, 106, 217, 1);
             text-align: center;
             text-transform: uppercase;
-            // margin-top: calc(60 / 16 * 1em);
         }
         .section-title {
             width: 950px !important;
@@ -1042,8 +1342,6 @@
         .container {
             padding: 50px 20px;
             text-align: center;
-
-            width: 1560px !important;
             margin: auto;
 
             .section-title {
@@ -1052,12 +1350,7 @@
                 margin-bottom: 20px;
 
                 .highlight {
-                    color: rgba(
-                        35,
-                        106,
-                        217,
-                        1
-                    ); // Replace with your desired highlight color
+                    color: rgba(35, 106, 217, 1);
                 }
             }
 
@@ -1092,7 +1385,154 @@
                         border-color 0.3s;
 
                     &.completed {
-                        background-color: #007bff; // Blue color
+                        background-color: #007bff;
+                        color: #fff;
+                        border-color: #007bff;
+                    }
+                }
+
+                .line {
+                    flex: 1;
+                    height: 2px;
+                    background-color: #d9d9d9;
+                    width: 100%;
+                }
+
+                // Ensure no extra space between line and step-line
+                .line + .step-line {
+                    margin-left: -2px; // Overlap slightly to connect with the line
+                }
+
+                .line:first-child {
+                    flex: 0.5; // Adjust line size before the first step
+                    background-color: #e2e2e2;
+                }
+
+                .line:last-child {
+                    flex: 0.5; // Adjust line size after the last step
+                    background-color: #d9d9d9;
+                }
+
+                // Special handling for first and last lines
+                .progress-indicator > .line:first-child {
+                    flex: 0.5; // Adjust line size before the first step
+                    background-color: #e2e2e2;
+                }
+
+                .progress-indicator > .line:last-child {
+                    flex: 0.5; // Adjust line size after the last step
+                    background-color: #d9d9d9;
+                }
+            }
+
+            .steps {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .step {
+                    background: #ffffff !important;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    max-width: auto;
+                    padding: 48px 36px;
+                    height: auto;
+
+                    h3 {
+                        font-size: 30px !important;
+                        margin-top: 36px;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        // color: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .process-section {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 1),
+            rgba(242, 245, 255, 1)
+        );
+        .section-header {
+            font-size: 16px;
+            line-height: calc(24 / 18 * 1em);
+            font-family: "Roboto", "Arial", sans-serif;
+            font-weight: 500;
+            color: rgba(35, 106, 217, 1);
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .section-title {
+            width: 950px !important;
+            margin: auto;
+            font-size: 60px !important;
+        }
+        .section-description {
+            width: 750px !important;
+            margin: auto;
+            font-size: 18px;
+            color: #353535;
+            font-weight: normal;
+            margin-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            padding: 50px 20px;
+            text-align: center;
+
+            width: 1560px !important;
+            margin: auto;
+
+            .section-title {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+
+                .highlight {
+                    color: rgba(35, 106, 217, 1);
+                }
+            }
+
+            .section-description {
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: 40px;
+            }
+
+            .progress-indicator {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                width: 1440px !important;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: auto;
+                margin-bottom: 48px;
+
+                .step-line {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border: 2px solid #d9d9d9;
+                    color: #000;
+                    font-weight: bold;
+                    transition:
+                        background-color 0.3s,
+                        border-color 0.3s;
+
+                    &.completed {
+                        background-color: #007bff;
                         color: #fff;
                         border-color: #007bff;
                     }
@@ -1142,8 +1582,6 @@
                 margin-top: 48px !important;
                 font-family: Arial, Helvetica, sans-serif;
                 margin: auto !important;
-                //   background-color: #007bff;
-                //   margin: 0px 0px !important;
 
                 .step {
                     background: #ffffff !important;
@@ -1153,12 +1591,6 @@
                     max-width: 460px !important;
                     padding: 48px 36px;
                     height: 472px !important;
-
-                    // .icon-container {
-                    //   width: 50px;
-                    //   height: 50px;
-                    //   margin: 0 auto 15px;
-                    // }
 
                     h3 {
                         font-size: 40px !important;
@@ -1174,174 +1606,6 @@
             }
         }
     }
-}
-
-@media only screen and (min-width: 320px) {
-    .process-section {
-        background: linear-gradient(
-            0deg,
-            rgba(255, 255, 255, 1),
-            rgba(242, 245, 255, 1)
-        );
-
-        .section-header {
-            font-size: 16px;
-            line-height: calc(24 / 18 * 1em);
-            font-family: "Roboto", "Arial", sans-serif;
-            font-weight: 500;
-            color: rgba(35, 106, 217, 1);
-            text-align: center;
-            text-transform: uppercase;
-            // margin-top: calc(60 / 16 * 1em);
-        }
-        .section-title {
-            width: 100%;
-            margin: auto;
-            font-size: 30px;
-        }
-        .section-description {
-            width: 100%;
-            margin: auto;
-            font-size: 18px;
-            color: #353535;
-            font-weight: normal;
-            margin-bottom: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .container {
-            padding: 50px 0;
-            text-align: center;
-
-            width: 100%;
-            margin: auto;
-
-            .section-title {
-                font-size: 2.5rem;
-                font-weight: bold;
-                margin-bottom: 20px;
-
-                .highlight {
-                    color: rgba(
-                        35,
-                        106,
-                        217,
-                        1
-                    ); // Replace with your desired highlight color
-                }
-            }
-
-            .section-description {
-                font-size: 1rem;
-                color: #555;
-                margin-bottom: 40px;
-            }
-
-            .progress-indicator {
-                display: none;
-                align-items: center !important;
-                justify-content: space-between !important;
-                width: 1440px !important;
-                font-family: Arial, Helvetica, sans-serif;
-
-                .step-line {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #fff;
-                    border: 2px solid #d9d9d9;
-                    color: #000;
-                    font-weight: bold;
-                    transition:
-                        background-color 0.3s,
-                        border-color 0.3s;
-
-                    &.completed {
-                        background-color: #007bff; // Blue color
-                        color: #fff;
-                        border-color: #007bff;
-                    }
-                }
-
-                .line {
-                    flex: 1;
-                    height: 2px;
-                    background-color: #d9d9d9;
-                    width: 100%;
-                }
-
-                // Ensure no extra space between line and step-line
-                .line + .step-line {
-                    margin-left: -2px; // Overlap slightly to connect with the line
-                }
-
-                .line:first-child {
-                    flex: 0.5; // Adjust line size before the first step
-                    background-color: #e2e2e2;
-                }
-
-                .line:last-child {
-                    flex: 0.5; // Adjust line size after the last step
-                    background-color: #d9d9d9;
-                }
-
-                // Special handling for first and last lines
-                .progress-indicator > .line:first-child {
-                    flex: 0.5; // Adjust line size before the first step
-                    background-color: #e2e2e2;
-                }
-
-                .progress-indicator > .line:last-child {
-                    flex: 0.5; // Adjust line size after the last step
-                    background-color: #d9d9d9;
-                }
-            }
-
-            .steps {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 20px;
-                width: 100%;
-                margin: 48px 0px;
-                font-family: Arial, Helvetica, sans-serif;
-                //   margin: 0 18px;
-
-                .step {
-                    background: #fff;
-                    padding: 20px;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    max-width: 90%;
-                    padding: 48px 36px;
-                    margin: auto;
-
-                    // .icon-container {
-                    //   width: 50px;
-                    //   height: 50px;
-                    //   margin: 0 auto 15px;
-                    // }
-
-                    h3 {
-                        font-size: 30px;
-                        margin-top: 36px;
-                        margin-bottom: 10px;
-                    }
-
-                    p {
-                        font-size: 0.9rem;
-                        color: 18px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (min-width: 640px) {
-}
-@media only screen and (min-width: 1024px) {
 }
 
 /*-- -------------------------- -->

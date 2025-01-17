@@ -872,7 +872,374 @@
 /*-- -------------------------- -->
 <--- how it work home start            -->
 <--- -------------------------- -*/
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 320px) {
+  .process-section {
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(242, 245, 255));
+  }
+  .process-section .section-header {
+    font-size: 16px;
+    line-height: 1.3333333333em;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    color: rgb(35, 106, 217);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .process-section .section-title {
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+  }
+  .process-section .section-description {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: #353535;
+    font-weight: normal;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .process-section .container .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .process-section .container .section-title .highlight {
+    color: rgb(35, 106, 217);
+  }
+  .process-section .container .section-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  .process-section .container .progress-indicator {
+    display: none;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 1440px !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container .progress-indicator .step-line {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #d9d9d9;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .process-section .container .progress-indicator .step-line.completed {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  .process-section .container .progress-indicator .line {
+    flex: 1;
+    height: 2px;
+    background-color: #d9d9d9;
+    width: 100%;
+  }
+  .process-section .container .progress-indicator .line + .step-line {
+    margin-left: -2px;
+  }
+  .process-section .container .progress-indicator .line:first-child {
+    flex: 0.5;
+    background-color: #e2e2e2;
+  }
+  .process-section .container .progress-indicator .line:last-child {
+    flex: 0.5;
+    background-color: #d9d9d9;
+  }
+  .process-section .container .progress-indicator .progress-indicator > .line:first-child {
+    flex: 0.5;
+    background-color: #e2e2e2;
+  }
+  .process-section .container .progress-indicator .progress-indicator > .line:last-child {
+    flex: 0.5;
+    background-color: #d9d9d9;
+  }
+  .process-section .container .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 48px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container .steps .step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    padding: 48px 36px;
+    margin: auto;
+  }
+  .process-section .container .steps .step h3 {
+    font-size: 30px;
+    margin-top: 36px;
+    margin-bottom: 10px;
+  }
+  .process-section .container .steps .step p {
+    font-size: 0.9rem;
+    color: 18px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .process-section {
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(242, 245, 255));
+  }
+  .process-section .section-header {
+    font-size: 16px;
+    line-height: 1.3333333333em;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    color: rgb(35, 106, 217);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .process-section .section-title {
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+  }
+  .process-section .section-description {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    color: #353535;
+    font-weight: normal;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .process-section .container .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .process-section .container .section-title .highlight {
+    color: rgb(35, 106, 217);
+  }
+  .process-section .container .section-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  .process-section .container .progress-indicator {
+    display: none;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 1440px !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container .progress-indicator .step-line {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #d9d9d9;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .process-section .container .progress-indicator .step-line.completed {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  .process-section .container .progress-indicator .line {
+    flex: 1;
+    height: 2px;
+    background-color: #d9d9d9;
+    width: 100%;
+  }
+  .process-section .container .progress-indicator .line + .step-line {
+    margin-left: -2px;
+  }
+  .process-section .container .progress-indicator .line:first-child {
+    flex: 0.5;
+    background-color: #e2e2e2;
+  }
+  .process-section .container .progress-indicator .line:last-child {
+    flex: 0.5;
+    background-color: #d9d9d9;
+  }
+  .process-section .container .progress-indicator .progress-indicator > .line:first-child {
+    flex: 0.5;
+    background-color: #e2e2e2;
+  }
+  .process-section .container .progress-indicator .progress-indicator > .line:last-child {
+    flex: 0.5;
+    background-color: #d9d9d9;
+  }
+  .process-section .container .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin: 48px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container .steps .step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    padding: 48px 36px;
+    margin: auto;
+  }
+  .process-section .container .steps .step h3 {
+    font-size: 30px;
+    margin-top: 36px;
+    margin-bottom: 10px;
+  }
+  .process-section .container .steps .step p {
+    font-size: 0.9rem;
+    color: 18px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .process-section {
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(242, 245, 255));
+  }
+  .process-section .section-header {
+    font-size: 16px;
+    line-height: 1.3333333333em;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    color: rgb(35, 106, 217);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .process-section .section-title {
+    width: 950px !important;
+    margin: auto;
+    font-size: 60px !important;
+  }
+  .process-section .section-description {
+    width: 750px !important;
+    margin: auto;
+    font-size: 18px;
+    color: #353535;
+    font-weight: normal;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .process-section .container {
+    padding: 50px 20px;
+    text-align: center;
+    margin: auto;
+  }
+  .process-section .container .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .process-section .container .section-title .highlight {
+    color: rgb(35, 106, 217);
+  }
+  .process-section .container .section-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  .process-section .container .progress-indicator {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 1440px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+  .process-section .container .progress-indicator .step-line {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #d9d9d9;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .process-section .container .progress-indicator .step-line.completed {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  .process-section .container .progress-indicator .line {
+    flex: 1;
+    height: 2px;
+    background-color: #d9d9d9;
+    width: 100%;
+  }
+  .process-section .container .progress-indicator .line + .step-line {
+    margin-left: -2px;
+  }
+  .process-section .container .progress-indicator .line:first-child {
+    flex: 0.5;
+    background-color: #e2e2e2;
+  }
+  .process-section .container .progress-indicator .line:last-child {
+    flex: 0.5;
+    background-color: #d9d9d9;
+  }
+  .process-section .container .progress-indicator .progress-indicator > .line:first-child {
+    flex: 0.5;
+    background-color: #e2e2e2;
+  }
+  .process-section .container .progress-indicator .progress-indicator > .line:last-child {
+    flex: 0.5;
+    background-color: #d9d9d9;
+  }
+  .process-section .container .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-section .container .steps .step {
+    background: #ffffff !important;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: auto;
+    padding: 48px 36px;
+    height: auto;
+  }
+  .process-section .container .steps .step h3 {
+    font-size: 30px !important;
+    margin-top: 36px;
+    margin-bottom: 10px;
+  }
+  .process-section .container .steps .step p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1440px) {
   .process-section {
     background: linear-gradient(0deg, rgb(255, 255, 255), rgb(242, 245, 255));
   }
@@ -990,130 +1357,6 @@
   }
   .process-section .container .steps .step h3 {
     font-size: 40px !important;
-    margin-top: 36px;
-    margin-bottom: 10px;
-  }
-  .process-section .container .steps .step p {
-    font-size: 0.9rem;
-    color: 18px;
-  }
-}
-@media only screen and (min-width: 320px) {
-  .process-section {
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(242, 245, 255));
-  }
-  .process-section .section-header {
-    font-size: 16px;
-    line-height: 1.3333333333em;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 500;
-    color: rgb(35, 106, 217);
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .process-section .section-title {
-    width: 100%;
-    margin: auto;
-    font-size: 30px;
-  }
-  .process-section .section-description {
-    width: 100%;
-    margin: auto;
-    font-size: 18px;
-    color: #353535;
-    font-weight: normal;
-    margin-bottom: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .process-section .container {
-    padding: 50px 0;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-  }
-  .process-section .container .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .process-section .container .section-title .highlight {
-    color: rgb(35, 106, 217);
-  }
-  .process-section .container .section-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 40px;
-  }
-  .process-section .container .progress-indicator {
-    display: none;
-    align-items: center !important;
-    justify-content: space-between !important;
-    width: 1440px !important;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .process-section .container .progress-indicator .step-line {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border: 2px solid #d9d9d9;
-    color: #000;
-    font-weight: bold;
-    transition: background-color 0.3s, border-color 0.3s;
-  }
-  .process-section .container .progress-indicator .step-line.completed {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-  }
-  .process-section .container .progress-indicator .line {
-    flex: 1;
-    height: 2px;
-    background-color: #d9d9d9;
-    width: 100%;
-  }
-  .process-section .container .progress-indicator .line + .step-line {
-    margin-left: -2px;
-  }
-  .process-section .container .progress-indicator .line:first-child {
-    flex: 0.5;
-    background-color: #e2e2e2;
-  }
-  .process-section .container .progress-indicator .line:last-child {
-    flex: 0.5;
-    background-color: #d9d9d9;
-  }
-  .process-section .container .progress-indicator .progress-indicator > .line:first-child {
-    flex: 0.5;
-    background-color: #e2e2e2;
-  }
-  .process-section .container .progress-indicator .progress-indicator > .line:last-child {
-    flex: 0.5;
-    background-color: #d9d9d9;
-  }
-  .process-section .container .steps {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    margin: 48px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .process-section .container .steps .step {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    padding: 48px 36px;
-    margin: auto;
-  }
-  .process-section .container .steps .step h3 {
-    font-size: 30px;
     margin-top: 36px;
     margin-bottom: 10px;
   }

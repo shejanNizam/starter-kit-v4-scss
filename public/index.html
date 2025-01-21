@@ -154,14 +154,11 @@
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
-
-
-
 <header id="cs-navigation" class="cs-header">
     <div class="cs-container">
         <!--Nav Logo-->
-        <div >
-            <a href="/"  aria-label="back to home" tabindex="2">
+        <div>
+            <a href="/" aria-label="back to home" tabindex="2">
                 <img
                     src="/assets/images/white-logo.png"
                     alt=""
@@ -172,7 +169,7 @@
                 />
             </a>
         </div>
-       
+
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
             <!--Mobile Nav Toggle-->
@@ -289,31 +286,36 @@
                 </ul>
             </div>
         </nav>
-        <div>
-            <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.8058 1.69613C12.8058 1.14385 12.3581 0.696134 11.8058 0.696133L2.80582 0.696133C2.25354 0.696133 1.80582 1.14385 1.80582 1.69613C1.80582 2.24842 2.25354 2.69613 2.80582 2.69613L10.8058 2.69613L10.8058 10.6961C10.8058 11.2484 11.2535 11.6961 11.8058 11.6961C12.3581 11.6961 12.8058 11.2484 12.8058 10.6961L12.8058 1.69613ZM1.90633 13.0098L12.5129 2.40324L11.0987 0.989026L0.492112 11.5956L1.90633 13.0098Z" fill="white"/>
+        <div class="contact-us">
+            <a href="/contact" class="cs-button-solid cs-nav-button"
+                >Contact Us
+                <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M12.8058 1.69613C12.8058 1.14385 12.3581 0.696134 11.8058 0.696133L2.80582 0.696133C2.25354 0.696133 1.80582 1.14385 1.80582 1.69613C1.80582 2.24842 2.25354 2.69613 2.80582 2.69613L10.8058 2.69613L10.8058 10.6961C10.8058 11.2484 11.2535 11.6961 11.8058 11.6961C12.3581 11.6961 12.8058 11.2484 12.8058 10.6961L12.8058 1.69613ZM1.90633 13.0098L12.5129 2.40324L11.0987 0.989026L0.492112 11.5956L1.90633 13.0098Z"
+                        fill="white"
+                    />
                 </svg>
-                </a>
+            </a>
         </div>
-       
     </div>
 </header>
 <script>
-    const header = document.querySelector('#cs-navigation');
+    const header = document.querySelector("#cs-navigation");
 
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
-            header.classList.add('scrolled');
+            header.classList.add("scrolled");
         } else {
-            header.classList.remove('scrolled');
+            header.classList.remove("scrolled");
         }
     });
 </script>
-
-
-
-
-
 
 <!-- 
 <button
@@ -342,6 +344,7 @@
                 height="15"
             />
 </button> -->
+
         <main id="main">
     <!-- ============================================ -->
     <!--                    Hero                      -->

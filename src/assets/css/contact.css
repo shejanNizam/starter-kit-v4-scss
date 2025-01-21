@@ -239,7 +239,114 @@
     height: 36.125rem;
   }
 }
+@media only screen and (min-width: 0rem) {
+  .get-it-done-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    background-color: #236ad9;
+    color: #ffffff;
+    width: 340px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 38px;
+  }
+  .get-it-done-section__header {
+    color: #f2f5ff !important;
+  }
+  .get-it-done-section__header .get-it-done-section__title-1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    color: #ffffff !important;
+  }
+  .get-it-done-section__header .get-it-done-section__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff !important;
+  }
+  .get-it-done-section__header .get-it-done-section__cta {
+    background-color: #4d8ae8;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .get-it-done-section__header .get-it-done-section__cta:hover {
+    background-color: #4d8ae8;
+  }
+  .get-it-done-section__illustration img {
+    width: 340px;
+  }
+}
 @media only screen and (min-width: 64rem) {
+  .get-it-done-section {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0rem !important;
+    text-align: left !important;
+    justify-content: space-between;
+    padding: 2rem 5rem !important;
+    background-color: #236ad9;
+    color: #ffffff;
+    width: 1024px !important;
+    margin: auto;
+    border-radius: 38px;
+  }
+  .get-it-done-section__header {
+    max-width: 45% !important;
+    color: #f2f5ff !important;
+  }
+  .get-it-done-section__header .get-it-done-section__title-1 {
+    font-size: 38px !important;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    color: #ffffff !important;
+  }
+  .get-it-done-section__header .get-it-done-section__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff !important;
+  }
+  .get-it-done-section__header .get-it-done-section__cta {
+    background-color: #4d8ae8;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .get-it-done-section__header .get-it-done-section__cta:hover {
+    background-color: #4d8ae8;
+  }
+  .get-it-done-section__illustration {
+    max-width: 55% !important;
+  }
+  .get-it-done-section__illustration img {
+    width: 520px !important;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
   .get-it-done-section {
     display: flex;
     flex-direction: row !important;
@@ -292,58 +399,6 @@
   .get-it-done-section__illustration img {
     width: 720px !important;
     height: auto;
-  }
-}
-@media only screen and (min-width: 0rem) {
-  .get-it-done-section {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column-reverse;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 0rem;
-    background-color: #236ad9;
-    color: #ffffff;
-    width: 340px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 38px;
-  }
-  .get-it-done-section__header {
-    color: #f2f5ff !important;
-  }
-  .get-it-done-section__header .get-it-done-section__title-1 {
-    font-size: 30px;
-    line-height: 1.2;
-    margin: 0 0 1rem;
-    color: #ffffff !important;
-  }
-  .get-it-done-section__header .get-it-done-section__description {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0 0 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff !important;
-  }
-  .get-it-done-section__header .get-it-done-section__cta {
-    background-color: #4d8ae8;
-    color: #ffffff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    font-weight: 600 !important;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .get-it-done-section__header .get-it-done-section__cta:hover {
-    background-color: #4d8ae8;
-  }
-  .get-it-done-section__illustration img {
-    width: 340px;
   }
 }
 @media only screen and (min-width: 0rem) {

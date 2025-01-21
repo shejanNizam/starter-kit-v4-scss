@@ -289,72 +289,7 @@
     }
 }
 
-@media only screen and (min-width: 64rem) {
-    .get-it-done-section {
-        display: flex;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0rem !important;
-        text-align: left !important;
-        justify-content: space-between;
-        padding: 2rem 5rem !important;
-        background-color: #236ad9;
-        color: #ffffff;
-        width: 1440px !important;
-        margin: auto;
-        border-radius: 38px;
-        &__header {
-            max-width: 45% !important;
-            color: #f2f5ff !important;
-            // background-color: #68a3ff;
-
-            .get-it-done-section__title-1 {
-                font-size: 60px !important;
-                line-height: 1.2;
-                margin: 0 0 1rem;
-                color: #ffffff !important;
-                // span {
-                //     color: #4D8AE8;
-                // }
-            }
-
-            .get-it-done-section__description {
-                font-size: 1rem;
-                line-height: 1.5;
-                margin: 0 0 1.5rem;
-                font-family: Arial, Helvetica, sans-serif;
-                color: #ffffff !important;
-            }
-
-            .get-it-done-section__cta {
-                background-color: #4d8ae8;
-                color: #ffffff;
-                border: none;
-                padding: 0.8rem 1.5rem;
-                font-size: 1rem;
-                border-radius: 5px;
-                font-weight: 600 !important;
-                cursor: pointer;
-                transition: background-color 0.3s;
-
-                &:hover {
-                    background-color: #4d8ae8;
-                }
-            }
-        }
-
-        &__illustration {
-            max-width: 55% !important;
-
-            img {
-                width: 720px !important;
-                height: auto;
-            }
-        }
-    }
-}
-
+//  get it done start ----------------------->>
 @media only screen and (min-width: 0rem) {
     .get-it-done-section {
         text-align: center;
@@ -423,6 +358,139 @@
         }
     }
 }
+
+@media only screen and (min-width: 64rem) {
+    .get-it-done-section {
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0rem !important;
+        text-align: left !important;
+        justify-content: space-between;
+        padding: 2rem 5rem !important;
+        background-color: #236ad9;
+        color: #ffffff;
+        width: 1024px !important;
+        margin: auto;
+        border-radius: 38px;
+        &__header {
+            max-width: 45% !important;
+            color: #f2f5ff !important;
+            // background-color: #68a3ff;
+
+            .get-it-done-section__title-1 {
+                font-size: 38px !important;
+                line-height: 1.2;
+                margin: 0 0 1rem;
+                color: #ffffff !important;
+                // span {
+                //     color: #4D8AE8;
+                // }
+            }
+
+            .get-it-done-section__description {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin: 0 0 1.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff !important;
+            }
+
+            .get-it-done-section__cta {
+                background-color: #4d8ae8;
+                color: #ffffff;
+                border: none;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                font-weight: 600 !important;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #4d8ae8;
+                }
+            }
+        }
+
+        &__illustration {
+            max-width: 55% !important;
+
+            img {
+                width: 520px !important;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .get-it-done-section {
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0rem !important;
+        text-align: left !important;
+        justify-content: space-between;
+        padding: 2rem 5rem !important;
+        background-color: #236ad9;
+        color: #ffffff;
+        width: 1440px !important;
+        margin: auto;
+        border-radius: 38px;
+        &__header {
+            max-width: 45% !important;
+            color: #f2f5ff !important;
+            // background-color: #68a3ff;
+
+            .get-it-done-section__title-1 {
+                font-size: 60px !important;
+                line-height: 1.2;
+                margin: 0 0 1rem;
+                color: #ffffff !important;
+                // span {
+                //     color: #4D8AE8;
+                // }
+            }
+
+            .get-it-done-section__description {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin: 0 0 1.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff !important;
+            }
+
+            .get-it-done-section__cta {
+                background-color: #4d8ae8;
+                color: #ffffff;
+                border: none;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                font-weight: 600 !important;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #4d8ae8;
+                }
+            }
+        }
+
+        &__illustration {
+            max-width: 55% !important;
+
+            img {
+                width: 720px !important;
+                height: auto;
+            }
+        }
+    }
+}
+//  get it done end
 
 // contact page form section start -------------->>
 @media only screen and (min-width: 0rem) {
